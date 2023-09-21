@@ -1,9 +1,9 @@
 import streamlit as st
 import random
 
-st.title("おみくじアプリ")
+st.title("study with you")
 
-if st.button("おみくじを引く"):
-    results = ["大吉","中吉","小吉","吉","凶","大凶"]
+if st.button("let's study!"):
+    results = ["15minutes","30minutes","1hour","1.5hours","2hours","break time(~15minutes)"]
     result = random.choice(results)
     st.write(f"結果:{result}")
