@@ -42,3 +42,15 @@ if st.button('乱数を生成'):
     # 最小値と最大値の間で乱数を生成
     random_num = random.randint(min_val, max_val)
     st.write(f'生成された乱数: {random_num}')
+
+
+
+    import streamlit as st
+    import random
+
+    st.title("おみくじアプリ")
+
+    if st.button("おみくじを引く"):
+        results = ["大吉","中吉","小吉","吉","凶","大凶"]
+        result = random.choice(results)
+        st.write(f"結果:{results}")
